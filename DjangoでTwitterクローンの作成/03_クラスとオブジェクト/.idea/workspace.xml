@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0190f7ec-9c77-4568-8aad-f4fdf28f3489" name="Default Changelist" comment="演習＃１を入力しました。">
-      <change beforePath="$PROJECT_DIR$/演習問題/exercises.py" beforeDir="false" afterPath="$PROJECT_DIR$/演習問題/exercises.py" afterDir="false" />
-    </list>
+    <list default="true" id="0190f7ec-9c77-4568-8aad-f4fdf28f3489" name="Default Changelist" comment="演習＃１を入力しました。" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +64,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../04_コマンドライン入門" />
     <property name="settings.editor.selected.configurable" value="preferences.customizations" />
   </component>
   <component name="RunDashboard">
@@ -141,7 +139,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="978" y="0" width="862" height="1010" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
@@ -152,7 +149,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3442623" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3442623" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
