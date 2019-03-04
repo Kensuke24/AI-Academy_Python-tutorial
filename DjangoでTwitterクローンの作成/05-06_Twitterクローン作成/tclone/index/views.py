@@ -3,13 +3,23 @@ from .forms import *
 from .models import *
 
 def index(request):
-    id_list = NewTweet.objects.values_list('id', flat=True)
     tweet_list = NewTweet.objects.values_list('tweet', flat=True)
-    tweets = zip(id_list, tweet_list)
+    id_list = NewTweet.objects.values_list('id', flat=True)
+    id_list = list(id_list)
+    like_list = []
+    for i in id_list  :
+        try:
+            if Like.objects.get(new_tweet_id=i) :
+                like = 'いいね！済み'
+                like_list.append(like)
+        except:
+            like = 'いいね！をする'
+            like_list.append(like)
+    tweets = zip(id_list, tweet_list, like_list)
     tweets = list(tweets)
     f = {
-        'tweets': tweets
-     }
+            'tweets': tweets
+        }
     return render(request, 'index/index.html', f)
 
 def new(request):
@@ -46,3 +56,13 @@ def update(request, tweet_id):
             'new_tweet': new_tweet,
             }
         return render(request, 'index/update.html', f)
+
+
+def like(request, tweet_id):
+    try:
+        if Like.objects.get(new_tweet_id=tweet_id):
+            Like.objects.filter(new_tweet_id=tweet_id).delete()
+    except:
+        like = Like(new_tweet_id=tweet_id)
+        like.save()
+    return redirect('/')
