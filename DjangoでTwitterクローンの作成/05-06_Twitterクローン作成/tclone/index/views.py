@@ -1,17 +1,15 @@
-from django.shortcuts import render
-
-# Create your views here.
-
 from django.shortcuts import render, redirect
 from .forms import *
 from .models import *
 
-
 def index(request):
-    tweets = NewTweet .objects.values_list('tweet', flat=True)
+    id_list = NewTweet.objects.values_list('id', flat=True)
+    tweet_list = NewTweet.objects.values_list('tweet', flat=True)
+    tweets = zip(id_list, tweet_list)
+    tweets = list(tweets)
     f = {
-        'tweets': tweets,
-    }
+        'tweets': tweets
+     }
     return render(request, 'index/index.html', f)
 
 def new(request):
@@ -23,17 +21,16 @@ def new(request):
         tweet.save()
         return redirect('/')
     else:
-        new:tweet = new_tweet.as_table()
+        new_tweet = new_tweet.as_table()
         f = {
             'new_tweet': new_tweet,
-        }
-    return render(request, 'index/new.html')
+            }
+        return render(request, 'index/new.html', f)
 
-
+# deleteを追加
 def delete(request, tweet_id):
     NewTweet.objects.filter(id=tweet_id).delete()
     return redirect('/')
-
 
 def update(request, tweet_id):
     new_tweet = NewTweetForm(request.POST or None)
@@ -49,4 +46,3 @@ def update(request, tweet_id):
             'new_tweet': new_tweet,
             }
         return render(request, 'index/update.html', f)
-
