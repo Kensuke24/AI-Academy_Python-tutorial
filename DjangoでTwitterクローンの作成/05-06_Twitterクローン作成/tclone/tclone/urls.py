@@ -19,5 +19,6 @@ from django.urls import path,include # includeを追加
 urlpatterns = [
 #    path('admin/', admin.site.urls),
     path('', include('index.urls')),
-    path('accounts/', include('accounts.urls')), #ここを追加
+    path('accounts/', include('accounts.urls')),
+    path('accounts/', include('django.contrib.auth.urls')), #ここを追加
 ]
