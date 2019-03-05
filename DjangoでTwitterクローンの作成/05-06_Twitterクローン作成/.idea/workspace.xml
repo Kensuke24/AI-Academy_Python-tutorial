@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1faa8d40-43b5-4bc4-ac01-d48fbcef818a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/tclone/index/migrations/0002_like.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tclone/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/tclone/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tclone/index/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/tclone/index/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tclone/index/templates/index/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/tclone/index/templates/index/index.html" afterDir="false" />
@@ -104,7 +106,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="930" />
     <option name="y" value="19" />
     <option name="width" value="990" />
@@ -175,7 +177,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="930" y="19" width="990" height="1010" extended-state="0" />
+    <frame x="930" y="19" width="990" height="1010" extended-state="1" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21638656" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
